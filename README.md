@@ -3,6 +3,8 @@ Node.JS HTTP Markup Server
 
 HTTP-server for markup (using [express](http://expressjs.com/) framework and [ejs](http://embeddedjs.com/) template engine)
 
+[![NPM](https://nodei.co/npm/http-markup-server.png)](https://nodei.co/npm/http-markup-server/)
+
 Install
 =======
 
