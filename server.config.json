@@ -1,0 +1,10 @@
+{
+    "port": 8000,
+    "host": null,
+    "static": [ "images", "scripts", "styles" ],
+    "index_files": [ "index.html", "index.ejs" ],
+    "allowable_extensions": [ ".html", ".ejs" ],
+    "favicon": false,
+    "browse": true,
+    "security_log": false
+}

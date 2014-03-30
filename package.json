@@ -1,0 +1,47 @@
+{
+  "name": "http-markup-server",
+  "version": "0.0.1",
+  "description": "HTTP-server for markup (using express framework and ejs template engine)",
+  "dependencies": {
+    "express": "~3.5.1",
+    "ejs": "~1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unclechu/node-http-markup-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unclechu/node-http-markup-server/issues"
+  },
+  "keywords": [
+    "http",
+    "server",
+    "http-server",
+    "markup",
+    "express",
+    "ejs"
+  ],
+  "directories": {
+    "bin": "./bin"
+  },
+  "bin": {
+    "http-markup-server": "./bin/http-markup-server.js"
+  },
+  "main": "bin/http-markup-server.js",
+  "author": {
+    "name": "Viacheslav Lotsmanov"
+  },
+  "homepage": "https://github.com/unclechu/node-http-markup-server",
+  "licenses": [
+    {
+      "type": "GNU/GPLv3 by Free Software Foundation",
+      "url": "https://github.com/unclechu/node-http-markup-server/blob/master/LICENSE"
+    }
+  ]
+}
