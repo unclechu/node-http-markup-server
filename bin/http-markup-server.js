@@ -15,7 +15,7 @@ var spawn = require('child_process').spawn;
 var fs = require('fs');
 var url = require('url');
 
-var config = JSON.parse( fs.readFileSync('server.config.json') );
+var config = JSON.parse( fs.readFileSync('http-markup-server.config.json') );
 
 var port = config.port;
 var host = config.host;
