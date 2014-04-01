@@ -214,7 +214,14 @@ app.listen(port, host, function () {
     }
 
     if (port !== 80) URL += ':' + port;
-    if (openInBrowser) spawn('xdg-open', [URL], { stdio: 'ignore' });
+    if (openInBrowser) {
+
+        spawn('xdg-opens', [URL], { stdio: 'ignore' })
+            .on('error', function (err) {
+                console.log('Open link in browser error:', err.toString());
+            });
+
+    }
 
 });
 
