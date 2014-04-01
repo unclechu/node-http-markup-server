@@ -135,10 +135,24 @@ app.get('*', function (req, res) {
 
     }
 
+    var relativeRoot = location.pathname;
+    relativeRoot = relativeRoot.replace(/\/+/g, '/');
+    if (relativeRoot.slice(-1) !== '/') {
+        relativeRoot = path.dirname(relativeRoot);
+    } else {
+        relativeRoot = relativeRoot.slice(0, -1);
+    }
+    if (relativeRoot.charAt(0) === '/') {
+        relativeRoot = relativeRoot.slice(1);
+    }
+    relativeRoot = relativeRoot.replace(/[^\/]+/g, '..') + '/';
+    if (relativeRoot === '/') relativeRoot = './';
+
     function tryRender() {
 
         app.render(tpl, {
 
+            RELATIVE_ROOT: relativeRoot, // relative path to root
             location: location,
 
             curNavPos: function curNavPos(withIndexPage) {
