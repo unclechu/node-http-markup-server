@@ -1,6 +1,6 @@
 {
   "name": "http-markup-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HTTP-server for markup (using express framework and ejs template engine)",
   "dependencies": {
     "express": "^4.16.3",
